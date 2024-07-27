@@ -1,0 +1,221 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+:root{
+    --navbar-height:5px;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+#navbar{
+      display: flex;
+      align-items: center;
+      position: sticky;
+      top: 0px;
+
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.4;
+}
+#logo{
+margin: 10px 34px;
+}
+#logo img{
+    height: 45px;
+    margin: 3px 6px;
+}
+ul{
+    display: flex;
+}
+li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+a{
+    display: block;
+    padding: 16px 22px;
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+
+}
+#home::before{
+    content: "";
+    background: url('https://thumbs.dreamstime.com/z/people-eating-lunchboxes-grey-table-top-view-healthy-food-delivery-161242402.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 450px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.8;
+}
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+    justify-content: center;
+}
+.h-secondary{
+    font-size: 2rem;
+    padding: 12px;
+}
+
+#home h1{
+    color: white;
+    align-items: center;
+}
+#home p{
+    color: white;
+    align-items: center;
+}
+.btn{
+    color: white;
+    background-color: brown;
+    border: 2px solid white;
+    padding: 3px 6px;
+    margin: 9px 4px;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+.btn:hover{
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+}
+#services{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+}
+.box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 30px;
+    background-color: rgba(226, 11, 11, 0.093);
+}
+.box img{
+    height: 160px;
+    margin: auto;
+    display: flex;
+}
+.box h2{
+    display: flex;
+    color: blue;
+    justify-content: center;
+    font-weight: bold;
+}
+.box p{
+    color: green;
+    font-weight: bold;
+}
+.services-container h1{
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+    color: red;
+    font-weight: bold;
+
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients-section{
+    position: relative;
+}
+#clients-section::before{
+    content: "";
+    background: url('https://media.istockphoto.com/id/1457889029/photo/group-of-food-with-high-content-of-dietary-fiber-arranged-side-by-side.jpg?b=1&s=612x612&w=0&k=20&c=BON5S0uDJeCe66N9klUEw5xKSGVnFhcL8stPLczQd_8=') no-repeat center center/cover ;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.3;
+}
+#clients-section h1{
+    display: flex;
+    align-items: center;
+    color: purple;
+    font-weight: bold;
+}
+
+.client-item{
+   padding: 34px;
+}
+.client-item img{
+    height:124px;
+}
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    background: url('https://t4.ftcdn.net/jpg/03/56/30/27/360_F_356302770_QtpKSHBIv4mDUmuQWyqAobBhBRd8v4XC.jpg') no-repeat center center/cover ;
+    height: 100%;
+    width: 100%;
+    top: 22px;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.5;
+}
+#contact h1{
+    display: flex;
+    align-items: center;
+    padding: 34px 6px;
+    color: red;
+    font-weight: bold;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+#contact-box input, #contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    border-radius: 9px;
+}
+#contact-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 34px;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box form label{
+    font-size: 1.3rem;
+}
+.form-group{
+    color: blue;
+    font-weight: bold;
+}
